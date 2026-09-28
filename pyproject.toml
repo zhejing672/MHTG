@@ -1,0 +1,27 @@
+[project]
+name = "MGPPO"
+version = "0.1.0"
+description = "MGPPO 多智能体税收博弈经济模拟"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "torch",
+    "pygame",
+    "gym",
+    "wandb",
+    "tensorboard",
+    "tensorboardX",
+    "pandas",
+    "scipy",
+    "omegaconf",
+    "quantecon",
+    "matplotlib",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
